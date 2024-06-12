@@ -1,6 +1,7 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 import {
   BarChart2,
   Calculator,
@@ -65,9 +66,12 @@ const FEATURES: FeatureType[] = [
   },
 ];
 
-function FeatureCard({ feature }: Readonly<{ feature: FeatureType }>) {
+function FeatureCard({
+  feature,
+  className,
+}: Readonly<{ feature: FeatureType; className?: string }>) {
   return (
-    <Card>
+    <Card className={className}>
       <CardContent className="pt-6 flex flex-col items-center text-center space-y-4">
         <div className="size-16 p-4 rounded-full flex items-center justify-center bg-secondary">
           <feature.icon className="size-12" />
@@ -81,17 +85,17 @@ function FeatureCard({ feature }: Readonly<{ feature: FeatureType }>) {
 
 function FeaturesSection() {
   return (
-    <div
-      className="w-full flex items-center bg-secondary py-12"
-      id="features"
-    >
+    <div className="w-full flex items-center bg-secondary py-12" id="features">
       <div className="container space-y-4">
         <h2 className="uppercase text-center">Features</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {FEATURES.map((feature) => (
+          {FEATURES.map((feature, idx) => (
             <FeatureCard
               key={feature.title.toLocaleLowerCase().replaceAll(" ", "_")}
               feature={feature}
+              className={cn(
+                idx === FEATURES.length - 1 && "md:col-span-2 lg:col-span-3"
+              )}
             />
           ))}
         </div>

@@ -1,6 +1,7 @@
 import finImg from "@/assets/Revenue-bro.png";
 import Image from "next/image";
 import FeaturesSection from "./_components/features-section";
+import WhyChooseSection from "./_components/why-choose-section";
 export default function Home() {
   return (
     <main className="flex flex-col items-center space-y-2 w-full">
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
       </div>
       <FeaturesSection />
+      <WhyChooseSection />
     </main>
   );
 }
