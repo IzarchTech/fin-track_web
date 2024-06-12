@@ -2,10 +2,11 @@ import finImg from "@/assets/Revenue-bro.png";
 import Image from "next/image";
 import FeaturesSection from "./_components/features-section";
 import WhyChooseSection from "./_components/why-choose-section";
+import GetStartedSection from "./_components/get-started-section";
 export default function Home() {
   return (
-    <main className="flex flex-col items-center space-y-2 w-full">
-      <div className="w-full container grid grid-cols-[auto_1fr] place-items-center justify-items-center px-4">
+    <main className="flex flex-col w-full">
+      <div className="container grid grid-cols-[auto_1fr] place-items-center justify-items-center px-4">
         <div className="w-full max-w-[40ch] text-left">
           <h1>Take Control of Your Finances Effortlessly</h1>
           <p>
@@ -28,6 +29,7 @@ export default function Home() {
       </div>
       <FeaturesSection />
       <WhyChooseSection />
+      <GetStartedSection />
     </main>
   );
 }
