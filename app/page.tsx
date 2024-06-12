@@ -1,6 +1,6 @@
 import finImg from "@/assets/Revenue-bro.png";
 import Image from "next/image";
-import Features from "./_components/features";
+import FeaturesSection from "./_components/features-section";
 export default function Home() {
   return (
     <main className="flex flex-col items-center space-y-2 w-full">
@@ -25,7 +25,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <Features />
+      <FeaturesSection />
     </main>
   );
 }

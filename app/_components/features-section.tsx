@@ -79,7 +79,7 @@ function FeatureCard({ feature }: Readonly<{ feature: FeatureType }>) {
   );
 }
 
-function Features() {
+function FeaturesSection() {
   return (
     <div
       className="w-full flex items-center bg-secondary py-12"
@@ -100,4 +100,4 @@ function Features() {
   );
 }
 
-export default Features;
+export default FeaturesSection;
