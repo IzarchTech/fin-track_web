@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en" className={cn(jost.variable, teko.variable)}>
       <body
         className={cn(
-          "min-h-screen w-screen bg-background font-sans antialiased"
+          "min-h-screen w-screen bg-background text-foreground font-sans antialiased"
         )}
       >
         {children}
