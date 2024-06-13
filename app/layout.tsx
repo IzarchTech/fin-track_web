@@ -19,6 +19,16 @@ export const metadata: Metadata = {
     description:
       "Stay on top of your finances with our intuitive and user-friendly expense and income tracker. Whether you’re managing your personal budget, saving for a goal, or monitoring your business expenses, FinTrack provides the tools you need to stay organized and in control.",
   },
+  icons: [
+    { rel: "icon", url: "/assets/favicon/favicon.ico" },
+    { rel: "icon", sizes: "16x16", url: "/assets/favicon/favicon-16x16.png" },
+    { rel: "icon", sizes: "32x32", url: "/assets/favicon/favicon-32x32.png" },
+    { rel: "icon", url: "/assets/favicon/android-chrome-192x192.png" },
+    { rel: "icon", url: "/assets/favicon/android-chrome-512x512.png" },
+    { rel: "icon", url: "/assets/favicon/favicon.ico" },
+    { rel: "apple-touch-icon", url: "/assets/favicon/apple-touch-icon.png" },
+  ],
+  manifest: "/assets/favicon/site.webmanifest",
 };
 
 export default function RootLayout({
