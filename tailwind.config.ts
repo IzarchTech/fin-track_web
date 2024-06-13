@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        teko: "var(--font-teko)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
